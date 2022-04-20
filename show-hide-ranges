@@ -1,0 +1,501 @@
+Sub Worksheet_SelectionChange(ByVal Target As Excel.Range)
+    If Range("$B$1") = "Show All" Then
+    Call showall
+    ElseIf Range("$B$1") = "Brand" Then
+    Call showbrand
+       ElseIf Range("$B$1") = "ItemName" Then
+    ElseIf Range("$B$1") = "Item Name" Then
+   Call showItemName
+    
+    
+    ElseIf Range("$B$1") = "Selling Region" Then
+   Call showSellingRegion
+    
+    
+    ElseIf Range("$B$1") = "Channel" Then
+   Call showChannel
+    
+    
+    ElseIf Range("$B$1") = "Material UPC" Then
+   Call showMaterialUPC
+    
+    
+    ElseIf Range("$B$1") = "Engraving/Haz" Then
+   Call showEngravingHaz
+    
+    
+    ElseIf Range("$B$1") = "Hierarchy" Then
+   Call showHierarchy
+    
+    
+    ElseIf Range("$B$1") = "Material Dimensions" Then
+   Call showMaterialDimensions
+    
+    
+    ElseIf Range("$B$1") = "Material Weight" Then
+   Call showMaterialWeight
+    
+    
+    ElseIf Range("$B$1") = "Material Volume" Then
+   Call showMaterialVolume
+    
+    
+    ElseIf Range("$B$1") = "Material Label Claim" Then
+   Call showMaterialLabelClaim
+    
+    
+    ElseIf Range("$B$1") = "Inner Case Req" Then
+   Call showInnerCaseReq
+    
+    
+    ElseIf Range("$B$1") = "Units Per Inner" Then
+   Call showUnitsPerInner
+    
+    
+    ElseIf Range("$B$1") = "Inner Case GTIN" Then
+   Call showInnerCaseGTIN
+    
+    
+    ElseIf Range("$B$1") = "Inner Case Dims" Then
+   Call showInnerCaseDims
+    
+    
+    ElseIf Range("$B$1") = "Inner Case Weight" Then
+   Call showInnerCaseWeight
+    
+    
+    ElseIf Range("$B$1") = "Inner Case Vol" Then
+   Call showInnerCaseVol
+    
+    
+    ElseIf Range("$B$1") = "Outer Carton Req" Then
+   Call showOuterCartonReq
+    
+    
+    ElseIf Range("$B$1") = "Units Per Outer" Then
+   Call showUnitsPerOuter
+    
+    
+    ElseIf Range("$B$1") = "Outer Carton GTIN" Then
+   Call showOuterCartonGTIN
+    
+    
+    ElseIf Range("$B$1") = "Outer Carton Dims" Then
+   Call showOuterCartonDims
+    
+    
+    ElseIf Range("$B$1") = "Outer Carton Weight" Then
+   Call showOuterCartonWeight
+    
+    
+    ElseIf Range("$B$1") = "Outer Carton Vol" Then
+   Call showOuterCartonVol
+    
+    
+    ElseIf Range("$B$1") = "Pallet Req" Then
+   Call showPalletReq
+    
+    
+    ElseIf Range("$B$1") = "Pallet Arrangement" Then
+   Call showPalletArrangement
+    
+    
+    ElseIf Range("$B$1") = "Units Per Pallet" Then
+   Call showUnitsPerPallet
+    
+    
+    ElseIf Range("$B$1") = "Pallet Type" Then
+   Call showPalletType
+    
+    
+    ElseIf Range("$B$1") = "Pallet Dims" Then
+   Call showPalletDims
+    
+    
+    ElseIf Range("$B$1") = "Pallet Weight" Then
+   Call showPalletWeight
+    
+    
+    ElseIf Range("$B$1") = "Pallet Volume" Then
+   Call showPalletVolume
+
+ End If
+End Sub
+
+Sub showall()
+Range("I:LR").EntireColumn.Hidden = False
+End Sub
+
+Sub showbrand()
+Range("I:LR").EntireColumn.Hidden = True
+Range("Brand").EntireColumn.Hidden = False
+End Sub
+Sub showItemName()
+Range("I:LR").EntireColumn.Hidden = True
+Range("ItemName").EntireColumn.Hidden = False
+End Sub
+Sub showSellingRegion()
+Range("I:LR").EntireColumn.Hidden = True
+Range("SellingRegion").EntireColumn.Hidden = False
+End Sub
+Sub showChannel()
+Range("I:LR").EntireColumn.Hidden = True
+Range("Channel").EntireColumn.Hidden = False
+End Sub
+Sub showMaterialUPC()
+Range("I:LR").EntireColumn.Hidden = True
+Range("MaterialUPC").EntireColumn.Hidden = False
+End Sub
+Sub showEngravingHaz()
+Range("I:LR").EntireColumn.Hidden = True
+Range("EngravingHaz").EntireColumn.Hidden = False
+End Sub
+Sub showHierarchy()
+Range("I:LR").EntireColumn.Hidden = True
+Range("Hierarchy").EntireColumn.Hidden = False
+End Sub
+Sub showMaterialDimensions()
+Range("I:LR").EntireColumn.Hidden = True
+Range("MaterialDimensions").EntireColumn.Hidden = False
+End Sub
+Sub showMaterialWeight()
+Range("I:LR").EntireColumn.Hidden = True
+Range("MaterialWeight").EntireColumn.Hidden = False
+End Sub
+Sub showMaterialVolume()
+Range("I:LR").EntireColumn.Hidden = True
+Range("MaterialVolume").EntireColumn.Hidden = False
+End Sub
+Sub showMaterialLabelClaim()
+Range("I:LR").EntireColumn.Hidden = True
+Range("MaterialLabelClaim").EntireColumn.Hidden = False
+End Sub
+Sub showInnerCaseReq()
+Range("I:LR").EntireColumn.Hidden = True
+Range("InnerCaseReq").EntireColumn.Hidden = False
+End Sub
+Sub showUnitsPerInner()
+Range("I:LR").EntireColumn.Hidden = True
+Range("UnitsPerInner").EntireColumn.Hidden = False
+End Sub
+Sub showInnerCaseGTIN()
+Range("I:LR").EntireColumn.Hidden = True
+Range("InnerCaseGTIN").EntireColumn.Hidden = False
+End Sub
+Sub showInnerCaseDims()
+Range("I:LR").EntireColumn.Hidden = True
+Range("InnerCaseDims").EntireColumn.Hidden = False
+End Sub
+Sub showInnerCaseWeight()
+Range("I:LR").EntireColumn.Hidden = True
+Range("InnerCaseWeight").EntireColumn.Hidden = False
+End Sub
+Sub showInnerCaseVol()
+Range("I:LR").EntireColumn.Hidden = True
+Range("InnerCaseVol").EntireColumn.Hidden = False
+End Sub
+Sub showOuterCartonReq()
+Range("I:LR").EntireColumn.Hidden = True
+Range("OuterCartonReq").EntireColumn.Hidden = False
+End Sub
+Sub showUnitsPerOuter()
+Range("I:LR").EntireColumn.Hidden = True
+Range("UnitsPerOuter").EntireColumn.Hidden = False
+End Sub
+Sub showOuterCartonGTIN()
+Range("I:LR").EntireColumn.Hidden = True
+Range("OuterCartonGTIN").EntireColumn.Hidden = False
+End Sub
+Sub showOuterCartonDims()
+Range("I:LR").EntireColumn.Hidden = True
+Range("OuterCartonDims").EntireColumn.Hidden = False
+End Sub
+Sub showOuterCartonWeight()
+Range("I:LR").EntireColumn.Hidden = True
+Range("OuterCartonWeight").EntireColumn.Hidden = False
+End Sub
+Sub showOuterCartonVol()
+Range("I:LR").EntireColumn.Hidden = True
+Range("OuterCartonVol").EntireColumn.Hidden = False
+End Sub
+Sub showPalletReq()
+Range("I:LR").EntireColumn.Hidden = True
+Range("PalletReq").EntireColumn.Hidden = False
+End Sub
+Sub showPalletArrangement()
+Range("I:LR").EntireColumn.Hidden = True
+Range("PalletArrangement").EntireColumn.Hidden = False
+End Sub
+Sub showUnitsPerPallet()
+Range("I:LR").EntireColumn.Hidden = True
+Range("UnitsPerPallet").EntireColumn.Hidden = False
+End Sub
+Sub showPalletType()
+Range("I:LR").EntireColumn.Hidden = True
+Range("PalletType").EntireColumn.Hidden = False
+End Sub
+Sub showPalletDims()
+Range("I:LR").EntireColumn.Hidden = True
+Range("PalletDims").EntireColumn.Hidden = False
+End Sub
+Sub showPalletWeight()
+Range("I:LR").EntireColumn.Hidden = True
+Range("PalletWeight").EntireColumn.Hidden = False
+End Sub
+Sub showPalletVolume()
+Range("I:LR").EntireColumn.Hidden = True
+Range("PalletVolume").EntireColumn.Hidden = False
+End Sub
+
+
+'function ShowBrand() {
+'    UnprotectAll()
+'    HideAll()
+' var spreadsheet = SpreadsheetApp.getActive();
+'     spreadsheet.getRangeByName("Brand").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'ProtectExceptFinals()
+'
+'};
+'
+'function ShowChannel() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("Channel").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'
+'function ShowEngravingHaz() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("EngravingHaz").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowHierarchy() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("Hierarchy").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowInnerCaseDims() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("InnerCaseDims").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'function ShowInnerCaseGTIN() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("InnerCaseGTIN").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'function ShowInnerCaseReq() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("InnerCaseReq").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'function ShowInnerCaseVol() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("InnerCaseVol").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'function ShowInnerCaseWeight() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("InnerCaseWeight").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'function ShowItemName() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("ItemName").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'function ShowMaterialDimensions() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("MaterialDimensions").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'function ShowMaterialWeight() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("MaterialWeight").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'function ShowMaterialLabelClaim() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("MaterialLabelClaim").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowMaterialUPC() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("MaterialUPC").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'function ShowMaterialVolume() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("MaterialVolume").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'function ShowOuterCartonDims() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("OuterCartonDims").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'
+'function ShowOuterCartonGTIN() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("OuterCartonGTIN").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'
+'function ShowOuterCartonReq() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("OuterCartonReq").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowOuterCartonVol() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("OuterCartonVol").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowOuterCartonWeight() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("OuterCartonWeight").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowPalletArrangement() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("PalletArrangement").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowPalletDims() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("PalletDims").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowPalletWeight() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("PalletWeight").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'
+'function ShowPalletReq() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("PalletReq").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowPalletType() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("PalletType").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowPalletVolume() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("PalletVolume").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowSellingRegion() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("SellingRegion").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'Sub ShowUnitsPerInner()
+'
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("UnitsPerInner").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowUnitsPerOuter() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("UnitsPerOuter").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function ShowUnitsPerPallet() {
+'    HideAll()
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRangeByName("UnitsPerPallet").activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'
+'function ShowAll() {
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRange('I:LR').activate();
+'  spreadsheet.getActiveSheet().showColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'  spreadsheet.getRange('H1').activate();
+'};
+'
+'function HideAll() {
+'  var spreadsheet = SpreadsheetApp.getActive();
+'  spreadsheet.getRange('I:LR').activate();
+'  spreadsheet.getActiveSheet().hideColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+'};
+'
