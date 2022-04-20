@@ -1,0 +1,36 @@
+Sub create_list()
+
+    delrow = 3
+    runrow = 3
+    
+  For r = 3 To 1310
+    For c = 2 To 52
+
+    If Sheet6.Cells(r, c).Value = 1 Then
+        matl = Sheet6.Cells(r, 1).Value
+        plant = Sheet6.Cells(2, c).Value
+        
+        Sheet7.Cells(delrow, 1).Value = matl
+        Sheet7.Cells(delrow, 2).Value = plant
+        
+        delrow = delrow + 1
+        
+    ElseIf Sheet6.Cells(r, c).Value = 2 Then
+    
+        matl = Sheet6.Cells(r, 1).Value
+        plant = Sheet6.Cells(2, c).Value
+    
+        
+        Sheet7.Cells(runrow, 4).Value = matl
+        Sheet7.Cells(runrow, 5).Value = plant
+        
+        runrow = runrow + 1
+        
+    End If
+    
+    Next c
+  Next r
+
+End Sub
+
+
